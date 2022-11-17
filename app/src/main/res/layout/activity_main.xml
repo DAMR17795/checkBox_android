@@ -20,10 +20,12 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/domingo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DOMINGO"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/domingo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
@@ -32,10 +34,12 @@
         app:layout_constraintVertical_bias="0.743" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/sabado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SÁBADO"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/sabado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
@@ -44,10 +48,12 @@
         app:layout_constraintVertical_bias="0.645" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/viernes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VIERNES"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/viernes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.433"
@@ -56,10 +62,12 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/jueves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JUEVES"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/jueves"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.425"
@@ -68,10 +76,12 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/miercoles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MIÉRCOLES"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/miercoles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -80,10 +90,12 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/lunes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LUNES"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/lunes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
@@ -92,10 +104,12 @@
         app:layout_constraintVertical_bias="0.185" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/martes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MARTES"
+        android:checked="false"
+        android:onClick="metodoClick"
+        android:text="@string/martes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
