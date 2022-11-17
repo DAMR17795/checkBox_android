@@ -11,6 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        }
+
+    fun metodoClick (view: View) {
         var texto = findViewById<TextView>(R.id.texto)
         val checkBox = findViewById<CheckBox>(R.id.lunes)
         val checkBox1 = findViewById<CheckBox>(R.id.martes)
@@ -19,9 +22,6 @@ class MainActivity : AppCompatActivity() {
         val checkBox4 = findViewById<CheckBox>(R.id.viernes)
         val checkBox5 = findViewById<CheckBox>(R.id.sabado)
         val checkBox6 = findViewById<CheckBox>(R.id.domingo)
-
-        }
-    fun metodoClick (view: View) {
         if (view is CheckBox) {
             val checked=view.isChecked
             var texto = findViewById<TextView>(R.id.texto)
@@ -29,34 +29,34 @@ class MainActivity : AppCompatActivity() {
             when (view.getId()) {
                 R.id.lunes ->
                     if (checked) {
-                        texto.setText("PULSADO: LUNES, tenemos 2 horas de PMDM")
+                        texto.setText("PULSADO: " + checkBox.getText() + ", tenemos 2 horas de PMDM")
                         horas+=2
                     } else {
                         texto.setText("PULSADO: NINGUNO")
                     }
                 R.id.martes ->
                     if (checked) {
-                        texto.setText("PULSADO: MARTES, tenemos 2 horas de PMDM")
+                        texto.setText("PULSADO: " + checkBox1.getText() + ", tenemos 2 horas de PMDM")
                         horas+=2
                     } else {
                         texto.setText("PULSADO: NINGUNO")
                     }
                 R.id.miercoles ->
                     if (checked) {
-                        texto.setText("PULSADO: MIÉRCOLES")
+                        texto.setText("PULSADO: " + checkBox2.getText())
                     } else {
                         texto.setText("PULSADO: NINGUNO")
                     }
                 R.id.jueves ->
                     if (checked) {
-                        texto.setText("PULSADO: JUEVES, tenemos 3 horas de PMDM")
-                        horas+=2
+                        texto.setText("PULSADO: " + checkBox3.getText() + ", tenemos 3 horas de PMDM")
+                        horas+=3
                     } else {
                         texto.setText("PULSADO: NINGUNO")
                     }
                 R.id.viernes ->
                     if (checked) {
-                        texto.setText("PULSADO: VIERNES")
+                        texto.setText("PULSADO: " + checkBox4.getText())
                     } else {
                         texto.setText("PULSADO: NINGUNO")
                     }
